@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=panchang@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/modern-normalize.css">
+  <link rel="stylesheet" href="styles/components/header.css">
 </head>
+
 <body>
-  <h1>hello world</h1>
+  <header class="header container">
+    <div class="header__brand">
+      <h2 class="header__logo">Airhead</h2>
+      <div class="vertical-seperate"></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./blog.html" class="active">Blog</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__functionalities">
+      <img src="./assets/profile.jpg" alt="profile icon">
+      <span>&#x2022;</span>
+      <i class="fa-solid fa-bell"></i>
+      <button>
+        <i class="fa-solid fa-phone"></i>
+        Contact Us
+      </button>
+    </div>
+
+    <i class="fa-solid fa-bars header__menu-icon"></i>
+
+  </header>
+
+  <div class="mobile-navigation">
+    <h3 class="mobile-navigation-title">Menu</h3>
+    <nav>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./blog.html" class="active">Blog</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./about.html">About Us</a></li>
+      </ul>
+      <hr>
+      <ul>
+        <li>
+          <button class="mobile-navigation-profile-button">
+            <img src="./assets/profile.jpg" alt="">
+            Profile
+          </button>
+        </li>
+        <hr>
+        <li>
+          <button>
+            <i class="fa-solid fa-bell"></i>
+            Notifications
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            Contact Us
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero"></section>
+    <section class="featured"></section>
+    <section class="articles"></section>
+  </main>
+  <footer>
+    <section class="contact"></section>
+    <section class="nav"></section>
+  </footer>
+
+  <script src="./src/header.js"></script>
 </body>
+
 </html>

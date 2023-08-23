@@ -1,0 +1,63 @@
+:root {
+  --dark: #16151d;
+  --light: #f8f7f2;
+
+  --slate50: #f8fafc;
+  --slate200: #e2e8f0;
+  --slate400: #94a3b8;
+  --slate600: #475569;
+  --slate800: #1e293b;
+  --slate900: #0f172a;
+
+  --gradient: linear-gradient(0deg, #8cb9d9, #27a5ff);
+
+  --xxs: 0.5rem;
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --base: 1rem;
+  --lg: 1.125rem;
+  --xl: 1.25rem;
+  --2xl: 1.5rem;
+  --3xl: 1.875rem;
+  --4xl: 2.25rem;
+  --5xl: 3rem;
+  --6xl: 3.75rem;
+  --7xl: 4.5rem;
+  --8xl: 6rem;
+  --9xl: 8rem;
+  --10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem); /* .5rem = 8px */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
