@@ -32,7 +32,23 @@
 
 .vertical-seperate {
   width: 1px;
-  border: .5px solid var(--slate600);
+  border: .5px solid var(--slate800);
+}
+
+.horizontal-seperator {
+  margin-block: 2rem;
+  height: 1px;
+  position: relative;
+  border: .5px solid var(--slate800);
+}
+
+.horizontal-seperator h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark);
+  padding: 0 2rem;
 }
 
 /* xs */

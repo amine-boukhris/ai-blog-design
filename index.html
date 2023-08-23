@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles/modern-normalize.css">
   <link rel="stylesheet" href="styles/components/header.css">
   <link rel="stylesheet" href="styles/components/hero.css">
+  <link rel="stylesheet" href="styles/components/featured.css">
 </head>
 
 <body>
@@ -85,6 +86,7 @@
   </div>
 
   <main>
+    <div class="horizontal-seperator container"></div>
     <section class="hero container section">
       <div class="hero__main">
         <div class="hero__content">
@@ -115,7 +117,22 @@
         </div>
       </div>
     </section>
-    <section class="featured"></section>
+    <div class="horizontal-seperator container section"><h3>Articles</h3></div>
+    <section class="featured container">
+      <div class="featured__content">
+        <!-- <div class="featured__author">
+          <img src="./assets/profile.jpg" alt="">
+          <span>Amine Boukhris</span>
+        </div>
+        <h2 class="featured__title">Artificial Intelligence Beyond Imagination</h2>
+        <p class="featured__article-textcontent">Lorem ipsum elit omnis, eius aliquid id fuga voluptatem doloribus nisi architecto aspernatur, reiciendis magni... <a href="./articles/:id">Read more</a></p> -->
+      </div>
+      <div class="featured__swipe-buttons">
+        <input type="radio" name="featured-article" id="featured-article1">
+        <input type="radio" name="featured-article" id="featured-article2">
+        <input type="radio" name="featured-article" id="featured-article3">
+      </div>
+    </section>
     <section class="articles"></section>
   </main>
   <footer>
@@ -125,6 +142,7 @@
 
   <script src="./src/header.js"></script>
   <script src="./src/hero.js"></script>
+  <script src="./src/featured.js"></script>
 </body>
 
 </html>

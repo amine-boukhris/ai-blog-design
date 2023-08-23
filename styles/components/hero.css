@@ -1,7 +1,3 @@
-.hero {
-  border: 1px solid red;
-}
-
 .hero__main {
   display: flex;
   flex-direction: column;
@@ -11,7 +7,7 @@
 .hero__title {
   font-size: var(--3xl);
   color: var(--light);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -19,7 +15,7 @@
   max-width: 60ch;
   font-size: var(--base);
   color: var(--slate400);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -49,8 +45,8 @@
 
 .hero__search input {
   border-radius: 100px;
-  padding: 0.8rem 1.2rem;
-  padding-left: 2.4rem;
+  padding: 1.2rem 1.6rem;
+  padding-left: 2.6rem;
   outline: none;
   border: none;
   background-color: var(--slate800);
@@ -66,7 +62,7 @@
 
 .hero__search-button {
   position: absolute;
-  left: 12px;
+  left: 16px;
   top: 48%;
   transform: translateY(-50%);
   color: var(--slate400);
@@ -95,6 +91,7 @@
   border-radius: 99px;
   margin-inline: 0.3rem;
   font-size: var(--sm);
+  outline: none;
 }
 
 .hero__nav-button.active {
@@ -145,8 +142,19 @@
 
 /* lg */
 @media (min-width: 1024px) {
+  .hero {
+    border-left: 1px solid var(--slate800);
+    border-right: 1px solid var(--slate800);
+    padding: 1.5rem;
+  }
+
+  .hero__search {
+    margin-bottom: 0;
+  }
+
   .hero__nav {
     flex-direction: row;
+    align-items: center;
     gap: 2.5rem;
   }
 
