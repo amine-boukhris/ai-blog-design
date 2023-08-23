@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/utils.css">
   <link rel="stylesheet" href="styles/modern-normalize.css">
   <link rel="stylesheet" href="styles/components/header.css">
+  <link rel="stylesheet" href="styles/components/hero.css">
 </head>
 
 <body>
@@ -84,7 +85,36 @@
   </div>
 
   <main>
-    <section class="hero"></section>
+    <section class="hero container section">
+      <div class="hero__main">
+        <div class="hero__content">
+          <h1 class="hero__title">Discover Nice Articles Here</h1>
+          <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor ea
+            labore ab a libero corporis.</p>
+        </div>
+        <div class="hero__social-media">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="hero__nav">
+        <div class="hero__search">
+          <input type="text" placeholder="Search...">
+          <button class="hero__search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="hero__nav-list">
+          <button class="hero__nav-button">All</button>
+          <button class="hero__nav-button active">Technology</button>
+          <button class="hero__nav-button">Sport</button>
+          <button class="hero__nav-button">Art</button>
+          <button class="hero__nav-button">Science</button>
+          <button class="hero__nav-button">Gaming</button>
+          <button class="hero__nav-button">Business</button>
+        </div>
+      </div>
+    </section>
     <section class="featured"></section>
     <section class="articles"></section>
   </main>
@@ -94,6 +124,7 @@
   </footer>
 
   <script src="./src/header.js"></script>
+  <script src="./src/hero.js"></script>
 </body>
 
 </html>

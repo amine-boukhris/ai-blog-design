@@ -1,5 +1,4 @@
 .header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +166,11 @@
 }
 
 /* md */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+  .mobile-navigation {
+    width: 40%;
+  }
+}
 
 /* lg */
 @media (min-width: 1024px) {
