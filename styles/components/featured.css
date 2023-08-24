@@ -1,13 +1,11 @@
 .featured {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 0.5rem;
+  overflow: hidden;
 }
 
 .featured__content {
-  /* border: 1px solid red; */
   background-image: url(../../assets/featured-image3.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -56,7 +54,7 @@
 
 .featured__content {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out; /* Transition property, duration, timing function */
+  transition: opacity 0.3s ease-in-out;
 }
 
 .featured__content.hidden {

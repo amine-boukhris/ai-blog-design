@@ -70,7 +70,6 @@ function changeFeaturedArticle() {
   }, 300);
 }
 
-// changeFeaturedArticle();
 setInterval(changeFeaturedArticle, 8000);
 
 button1.addEventListener("click", function () {
