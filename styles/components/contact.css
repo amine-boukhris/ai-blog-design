@@ -1,0 +1,129 @@
+.footer__contact {
+  background-color: #072424;
+}
+
+.footer__contact-wrapper {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__title {
+  font-size: var(--2xl);
+  color: var(--light);
+  text-align: center;
+}
+.contact__subtitle {
+  font-size: var(--base);
+  color: var(--slate600);
+  text-align: center;
+}
+
+.footer__contact-wrapper form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.footer__contact-wrapper label {
+  color: var(--slate400);
+  margin-left: 1rem;
+}
+
+.footer__contact-wrapper input {
+  outline: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 99px;
+  border: none;
+  background-color: var(--dark);
+  width: 100%;
+  caret-color: var(--light);
+  color: var(--light);
+}
+
+.footer__contact-wrapper button {
+  padding: 1.2rem 1.6rem;
+  background-color: #0f0ade;
+  border-radius: 99px;
+  width: 100%;
+}
+
+.contact__textcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .footer__contact-wrapper {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+    padding: 6rem 0;
+  }
+  .contact__title {
+    font-size: var(--4xl);
+    color: var(--light);
+    text-align: left;
+  }
+  .contact__subtitle {
+    font-size: var(--lg);
+    text-align: left;
+  }
+  .footer__contact-wrapper form {
+    flex-grow: 0.5;
+  }
+
+  .footer__contact-wrapper label + button {
+    font-size: var(--lg);
+  }
+
+  .footer__contact-wrapper input {
+    font-size: var(--lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .footer__contact-wrapper {
+    padding: 8rem 0;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .footer__contact-wrapper {
+    padding: 8rem 0;
+  }
+  .contact__title {
+    font-size: var(--5xl);
+  }
+  .contact__subtitle {
+    font-size: var(--xl);
+    color: var(--slate600);
+    text-align: left;
+  }
+  .footer__contact-wrapper form {
+    flex-grow: 0.5;
+  }
+
+  .footer__contact-wrapper label + button {
+    font-size: var(--xl);
+  }
+
+  .footer__contact-wrapper input {
+    font-size: var(--lg);
+  }
+}
